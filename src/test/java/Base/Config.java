@@ -11,12 +11,14 @@ import com.fasterxml.jackson.databind.deser.Deserializers.Base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BrowserLaunch extends Variables 
+public class Config extends Variables 
 {
 	public void launch_Browser() throws Exception 
 	{
+		// Read the browser details from property file
 		Browser = Utility.getdata_propertyfile.getbrowser();
-		//System.out.println(Browser);
+		
+		//Verify the browser value and open corresponding value
 		
 		if (Browser.equalsIgnoreCase("Chrome")) 
 		{
@@ -34,25 +36,29 @@ public class BrowserLaunch extends Variables
 		}
 		//Launch the web application
 		launch_URL();
-		// Initialize the POM pages i.e init elements 
-		POM_initialize.pagefactory_init_initialize(driver);
+		
+		// Initialize the POM pages i.e init elements - initializing the constructor of the class
+		POM_initialize.pagefactory_init_initialize();
 	}
 
 	public void launch_URL() throws Exception 
 	{
+		// Get the URL of the Application from the property file.
 		url = Utility.getdata_propertyfile.getURL();
-		//System.out.println(url);
+		// Open the URL of the Application
 		driver.get(url);
 						
 	}
 
 	public void quitbrowser() 
 	{
+		// Quit the  browser
 		driver.quit();
 	}
 	
 	public void closebrowser() 
 	{
+		// Close the browser
 		driver.close();
 	}
 

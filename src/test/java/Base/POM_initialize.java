@@ -13,16 +13,19 @@ import POMpages.Recruitment;
 
 public class POM_initialize {
 	
-	public static void pagefactory_init_initialize(WebDriver driver) {
+	public static void pagefactory_init_initialize() {
 		
-		OrangeLogin OrangeLogin_object = new OrangeLogin(driver);
-		OrangeAdmin OrangeAdmin_object = new OrangeAdmin(driver);
-		Orangehome Orangehome_object = new Orangehome(driver);
-		OrangeLeave OrangeLeave_object = new OrangeLeave(driver);
-		OrangeMyInfo OrangeMyInfo_object = new OrangeMyInfo(driver);
-		OrangePIM OrangePIM_object = new OrangePIM(driver);
-		OrangeTime OrangeTime_object = new OrangeTime(driver);
-		Recruitment Recruitment_object = new Recruitment(driver);
+		//Creating the object for all POM classes to invoke constructor
+		// The POM class (init) elements get initialized
+		
+		OrangeLogin OrangeLogin_object = new OrangeLogin();
+		OrangeAdmin OrangeAdmin_object = new OrangeAdmin();
+		Orangehome Orangehome_object = new Orangehome();
+		OrangeLeave OrangeLeave_object = new OrangeLeave();
+		OrangeMyInfo OrangeMyInfo_object = new OrangeMyInfo();
+		OrangePIM OrangePIM_object = new OrangePIM();
+		OrangeTime OrangeTime_object = new OrangeTime();
+		Recruitment Recruitment_object = new Recruitment();
 		
 	}
 

@@ -1,11 +1,16 @@
 package POMpages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
-public class OrangeMyInfo {
+import Base.Variables;
 
-	public OrangeMyInfo(WebDriver driver)
+public class OrangeMyInfo extends Variables {
+	
+	// Constructor to initialize initElements
+	
+	public OrangeMyInfo()
 	{
+		PageFactory.initElements(driver, this);
 		
 	}
 }

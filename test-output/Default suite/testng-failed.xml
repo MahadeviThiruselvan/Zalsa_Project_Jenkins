@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.TC3_Check_Login_Multipleuser">
+      <class name="Testcases.TC4_OrangeHome_CheckLeftPane">
         <methods>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="Login_multipleuser"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="Maintenancecheck"/>
         </methods>
-      </class> <!-- Testcases.TC3_Check_Login_Multipleuser -->
+      </class> <!-- Testcases.TC4_OrangeHome_CheckLeftPane -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

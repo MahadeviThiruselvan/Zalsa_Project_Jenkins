@@ -1,11 +1,16 @@
 package POMpages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
-public class Recruitment {
+import Base.Variables;
 
-	public Recruitment(WebDriver driver)
+public class Recruitment extends Variables{
+	
+	// Constructor to initialize initElements
+	
+	public Recruitment()
 	{
-		
+		PageFactory.initElements(driver, this);
 	}
 }

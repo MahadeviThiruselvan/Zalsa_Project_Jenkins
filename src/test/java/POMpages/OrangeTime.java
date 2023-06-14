@@ -1,11 +1,15 @@
 package POMpages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
-public class OrangeTime {
+import Base.Variables;
 
-	public OrangeTime(WebDriver driver)
+public class OrangeTime extends Variables {
+
+	// Constructor to initialize initElements
+
+	public OrangeTime()
 	{
-		
+		PageFactory.initElements(driver, this);
 	}
 }
