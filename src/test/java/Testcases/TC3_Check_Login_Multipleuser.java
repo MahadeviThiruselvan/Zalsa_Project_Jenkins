@@ -62,7 +62,7 @@ public class TC3_Check_Login_Multipleuser extends Config
 	@AfterTest
 	public void afterSuite() throws InterruptedException 
 	{
-		Thread.sleep(3000);
+		//Thread.sleep(3000); Dont add Thread.sleep since it would block performance
 		quitbrowser();
 	}
 
